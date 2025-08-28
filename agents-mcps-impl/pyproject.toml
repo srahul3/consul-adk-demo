@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "consul-adk-example"
+version = "0.1.0"
+description = "consul-adk-example"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "consul-adk>=0.0.1",
+]
+
+[tool.setuptools.packages.find]
+include = ["agents*", "mcps*", "app*"]
