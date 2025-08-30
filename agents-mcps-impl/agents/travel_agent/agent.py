@@ -49,6 +49,7 @@ class TravelAgent(ConsulEnabledAIAgent):
             name="DestinationsTool",
             description="Lists cities in countries, continents, or united regions with detailed information"
         )
+        self._clear_user_defined_tool()
         self._append_user_defined_tool(FunctionTool(destinations_tool.list_cities_capped))
         self._set_orchestrator(False)
 

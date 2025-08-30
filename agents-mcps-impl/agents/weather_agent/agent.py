@@ -50,6 +50,7 @@ class WeatherAgent(ConsulEnabledAIAgent):
             description="Gets the realtime weather for one or more locations"
         )
 
+        self._clear_user_defined_tool()
         self._append_user_defined_tool(FunctionTool(weather_tool.get_weather))
         self._set_orchestrator(False)
 
