@@ -54,7 +54,7 @@ class TravelAgent(ConsulEnabledAIAgent):
         self._set_orchestrator(False)
 
         return LlmAgent(
-            model="gemini-2.5-flash-latest",  # Gemini model version
+            model="gemini-2.5-flash",  # Gemini model version
             name="travel_agent",  # Name of the agent
             description="Geographic expert that lists and provides information about cities worldwide",  # Description for metadata
             instruction="""You are a city information specialist focused on listing cities across different geographical regions.

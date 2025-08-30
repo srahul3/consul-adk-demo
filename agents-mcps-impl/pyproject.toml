@@ -9,7 +9,7 @@ description = "consul-adk-demo"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
-    "consul-adk>=0.0.2",
+    "consul-adk>=0.0.3",
 ]
 
 [tool.setuptools.packages.find]

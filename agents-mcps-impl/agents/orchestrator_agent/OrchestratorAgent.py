@@ -11,7 +11,7 @@ class OrchestratorAgent(ConsulEnabledAIAgent):
         """
         self._set_orchestrator(True)
         ai_agent = LlmAgent(
-            model="gemini-2.5-flash-latest",
+            model="gemini-2.5-flash",
             name="orchestrator_agent",
             description="Delegates user queries to child A2A agents based on intent.",
             instruction=self._root_instruction,
